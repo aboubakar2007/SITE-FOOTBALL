@@ -1,210 +1,134 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="boutique.css">
+    <title>Real Madrid — Boutique</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Alfa+Slab+One&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="boutique.css">
     <link rel="shortcut icon" href="./images/real-madrid-cf-logo-noir-et-blanc-club-de-football-professionnel-espagne-illustration-vectorielle-resume-noir-et-blanc-2t22c35.jpg">
 </head>
 <body>
     <header>
-        <nav> 
-            <div class="nav-text">
-                <img src="./images/Adobe Express - file.png" alt="" width="50" height="50">
-            <h1> réal madrid </h1>
-            
-            </div>
-            <div class="nav-element">
+        <a href="index.html" class="nav-text">
+            <img src="./images/Adobe Express - file.png" alt="Logo du Real Madrid" width="44" height="44">
+            <span>Real Madrid</span>
+        </a>
+        <button class="burger" aria-label="Ouvrir le menu" aria-expanded="false">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <nav>
             <ul>
-               
-                <li><a href="index.html">accueil</a></li>
-                <li><a href="index.html#boutique">boutique</a></li>
-                <li><a href="index.html#actu">actualité</a></li>
-                <li><a href="connexion.html" <i class="fa-solid fa-user"></i></a></li>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="index.html#actu">Actualité</a></li>
+                <li><a href="#joueur" class="actif">Boutique</a></li>
+                <li><a href="connexion.html" class="compte"><i class="fa-solid fa-user"></i> Compte</a></li>
             </ul>
-        </div>
         </nav>
     </header>
-    <div class="global">
-        <div class="global-txt"> <h1>Survêtement Real Madrid</h1> 
-        <p> decouvrez la nouvelle tendance sportive</p>
+
+    <div class="global global-boutique">
+        <div class="texte">
+            <span class="sur-titre">Nouvelle collection</span>
+            <h1>Survêtement Real Madrid</h1>
+            <p>Découvrez la nouvelle tendance sportive.</p>
+            <div class="boutons">
+                <a href="formulaire.html" class="bouton bouton-plein">Commander</a>
+                <a href="#joueur" class="bouton bouton-contour">Acheter par joueur</a>
+            </div>
         </div>
-       <div class="global-img"> <img src="./imgboutique/global/over2.webp" alt=""></div>
-        
+        <div class="image"><img src="./imgboutique/global/over2.webp" alt="Survêtement Real Madrid"></div>
     </div>
-    <section id="joueur">
-        <h1>acheter par joueur</h1>
-        <div class="card1">
-            <div class="card2">
-                <img src="./imgboutique/achat-j/mbappe_-_desktop_-_v2.webp" alt="">
-                <p> #9 Mbappé
-                    
-                    <a href="formulaire.html"><button>acheter</button></a>
-                </p>
-            </div>
 
-            <div class="card2">
-                <img src="./imgboutique/achat-j/vini_jr_-_desktop.webp" alt="">
-                <p>
-                    #7 vini jr
-                    <a href="formulaire.html"><button>acheter</button></a>
-                </p>
-            </div>
-
-            <div class="card2">
-                <img src="./imgboutique/achat-j/bellingham_-_desktop.webp" alt="">
-                <p>
-                    #5 bellingham 
-                    <a href="formulaire.html"><button>acheter</button></a>
-                </p>
-            </div>
-
-            <div class="card2">
-                <img src="./imgboutique/achat-j/valverde_-_desktop.webp" alt="">
-                <p>
-                    #8 valverde
-                    <a href="formulaire.html"><button>acheter</button></a>
-                </p>
-            </div>
-
-            <div class="card2">
-                <img src="./imgboutique/achat-j/modric_-_desktop.webp" alt="">
-                <p>
-                    #10 modric
-                    <a href="formulaire.html"><button>acheter</button></a>
-                </p>
-            </div>
-
-            <div class="card2">
-                <img src="./imgboutique/achat-j/curtois_-_desktop.webp" alt="">
-                <p>
-                    #1 curtois
-                    <a href="formulaire.html"><button>acheter</button></a>
-                </p>
-            </div>
-
-            <div class="card2">
-                <img src="./imgboutique/achat-j/arda_-_desktop.webp" alt="">
-                <p>
-                    #15 arda
-                    <a href="formulaire.html"><button>acheter</button></a>
-                </p>
-            </div>
-
-            <div class="card2">
-                <img src="./imgboutique/achat-j/camavinga_-_desktop.webp" alt="">
-                <p>
-                    #6 camavinga
-                    <a href="formulaire.html"><button>acheter</button></a>
-                </p>
-            </div>
-
-            <div class="card2">
-                <img src="./imgboutique/achat-j/rodrygo-_desktop.webp" alt="">
-                <p>#11 rodrygo
-                    <a href="formulaire.html"><button>acheter</button></a>
-                </p>
-            </div>
-
-            <div class="card2">
-                <img src="./imgboutique/achat-j/endrick-desktop.webp" alt="">
-                <p>
-                    #16 endrick
-                    <a href="formulaire.html"><button>acheter</button></a>
-                </p>
-            </div>
+    <section id="joueur" class="bloc">
+        <div class="titre-section">
+            <span>Maillots floqués</span>
+            <h2>Acheter par joueur</h2>
+        </div>
+        <div class="joueurs">
+            <a href="formulaire.html" class="joueur"><img src="./imgboutique/achat-j/mbappe_-_desktop_-_v2.webp" alt=""><span class="numero">9</span><span class="nom">Mbappé</span></a>
+            <a href="formulaire.html" class="joueur"><img src="./imgboutique/achat-j/vini_jr_-_desktop.webp" alt=""><span class="numero">7</span><span class="nom">Vini Jr.</span></a>
+            <a href="formulaire.html" class="joueur"><img src="./imgboutique/achat-j/bellingham_-_desktop.webp" alt=""><span class="numero">5</span><span class="nom">Bellingham</span></a>
+            <a href="formulaire.html" class="joueur"><img src="./imgboutique/achat-j/valverde_-_desktop.webp" alt=""><span class="numero">8</span><span class="nom">Valverde</span></a>
+            <a href="formulaire.html" class="joueur"><img src="./imgboutique/achat-j/modric_-_desktop.webp" alt=""><span class="numero">10</span><span class="nom">Modrić</span></a>
+            <a href="formulaire.html" class="joueur"><img src="./imgboutique/achat-j/curtois_-_desktop.webp" alt=""><span class="numero">1</span><span class="nom">Courtois</span></a>
+            <a href="formulaire.html" class="joueur"><img src="./imgboutique/achat-j/arda_-_desktop.webp" alt=""><span class="numero">15</span><span class="nom">Arda Güler</span></a>
+            <a href="formulaire.html" class="joueur"><img src="./imgboutique/achat-j/camavinga_-_desktop.webp" alt=""><span class="numero">6</span><span class="nom">Camavinga</span></a>
+            <a href="formulaire.html" class="joueur"><img src="./imgboutique/achat-j/rodrygo-_desktop.webp" alt=""><span class="numero">11</span><span class="nom">Rodrygo</span></a>
+            <a href="formulaire.html" class="joueur"><img src="./imgboutique/achat-j/endrick-desktop.webp" alt=""><span class="numero">16</span><span class="nom">Endrick</span></a>
         </div>
     </section>
-    <section id="stellers">
-        <h1>Meilleures ventes</h1>
-        <div class="card3">
-            <div class="card4">
+
+    <section id="stellers" class="bloc bloc-sombre">
+        <div class="titre-section">
+            <span>Les plus demandés</span>
+            <h2>Meilleures ventes</h2>
+        </div>
+        <div class="ventes">
+            <article class="vente">
                 <img src="./imgboutique/meilleurs-ventes/RMCFMJ0149-01-1.webp" alt="">
                 <p>Veste adidas Originals Varsity 24/25 hommes</p>
-                <span>80.000f</span>
-            </div>
-
-            <div class="card4">
+                <div class="vente-pied"><span>80 000 F</span><a href="formulaire.html">Acheter</a></div>
+            </article>
+            <article class="vente">
                 <img src="./imgboutique/meilleurs-ventes/RMCFMJ0150-01.webp" alt="">
                 <p>Veste adidas Nouvel An Chinois 24/25 hommes</p>
-                <span>70.000f</span>
-            </div>
-
-            <div class="card4">
+                <div class="vente-pied"><span>70 000 F</span><a href="formulaire.html">Acheter</a></div>
+            </article>
+            <article class="vente">
                 <img src="./imgboutique/meilleurs-ventes/RMCFYP0086-01.webp" alt="">
-                <p>Pantalon Tiro Vis Tech Competition Noir enfants</p>
-                <span>75.000f</span>
-            </div>
-
-            <div class="card4">
+                <p>Pantalon Tiro Vis Tech Competition noir enfants</p>
+                <div class="vente-pied"><span>75 000 F</span><a href="formulaire.html">Acheter</a></div>
+            </article>
+            <article class="vente">
                 <img src="./imgboutique/meilleurs-ventes/RMCFYS0905-01.webp" alt="">
-                <p>Veste Tiro Vis Tech Competition Noire enfants</p>
-                <span>65.000f</span>
-            </div>
+                <p>Veste Tiro Vis Tech Competition noire enfants</p>
+                <div class="vente-pied"><span>65 000 F</span><a href="formulaire.html">Acheter</a></div>
+            </article>
         </div>
     </section>
 
-    <section id="collection">
-        <div class="card5">
-            <div class="card6 ht">
-                <img src="./imgboutique/collection/pod-abrigo_alaba.webp" alt="" class="haut">
-                <p>
-                    blouse d'hiver
-                    <a href="formulaire.html"><button>acheter</button></a>
-                </p>
-            </div>
-
-            <div class="card6 bs">
-                <img src="./imgboutique/collection/pod-icons-2.webp" alt="" class="bas">
-                <p>
-                     adidas Originals
-                     <a href="formulaire.html"><button>acheter</button></a>
-                </p>
-            </div>
-              
-            <div class="card6 ht">
-                <img src="./imgboutique/collection/pod-real_urban.webp" alt="" class="haut">
-                <p>
-                    Real Urban
-                     
-                    <a href="formulaire.html"><button>acheter</button></a>
-                </p>
-            </div>
-
-            <div class="card6 bs">
-                <img src="./imgboutique/collection/pod-blackout_militao.webp" alt="" class="bas">
-                <p>
-                    blackout <br>
-                    <a href="formulaire.html"><button>acheter</button></a>
-                </p>
-            </div>
+    <section id="collection" class="bloc">
+        <div class="titre-section">
+            <span>Style de vie</span>
+            <h2>Collections</h2>
+        </div>
+        <div class="collections">
+            <a href="formulaire.html" class="collection"><img src="./imgboutique/collection/pod-abrigo_alaba.webp" alt=""><span>Blouse d'hiver <i class="fa-solid fa-arrow-right"></i></span></a>
+            <a href="formulaire.html" class="collection"><img src="./imgboutique/collection/pod-icons-2.webp" alt=""><span>adidas Originals <i class="fa-solid fa-arrow-right"></i></span></a>
+            <a href="formulaire.html" class="collection"><img src="./imgboutique/collection/pod-real_urban.webp" alt=""><span>Real Urban <i class="fa-solid fa-arrow-right"></i></span></a>
+            <a href="formulaire.html" class="collection"><img src="./imgboutique/collection/pod-blackout_militao.webp" alt=""><span>Blackout <i class="fa-solid fa-arrow-right"></i></span></a>
         </div>
     </section>
 
     <footer>
-
-        <div class="logo">
-           <img src="./images/partenaires/1683000993orange-logo-black.webp" alt="">
-           <img src="./images/partenaires/abbot_logo.png" alt="">
-           <img src="./images/partenaires/adobe-black8153.jpg" alt="">
-           <img src="./images/partenaires/canon-large.webp" alt="">
-           <img src="./images/partenaires/cisco-2-logo-black-and-white.png" alt="">
-           <img src="./images/partenaires/coca-cola-black-logo-vector.png" alt="">
-           <img src="./images/partenaires/daktronics.jpg" alt="">
-           <img src="./images/partenaires/EA_Sports_monochrome_logo.svg.png" alt=""> <br>
-           <img src="./images/partenaires/emirates-airlines-logo-black-and-white.png" alt="">
-           <img src="./images/partenaires/hp.webp" alt="">
-           <img src="./images/partenaires/Logo_Adidas.webp" alt="">
-           <img src="./images/partenaires/mahou-logo-png_seeklogo-338814.png" alt="">
-           <img src="./images/partenaires/nivea-men.png" alt="">
-           <img src="./images/partenaires/PlayStation-Logo.png" alt="">
-           <img src="./images/partenaires/zegna6621.logowik.com.webp" alt="">
+        <p class="footer-titre">Nos partenaires</p>
+        <div class="logo-partenaires">
+            <img src="./images/partenaires/1683000993orange-logo-black.webp" alt="Orange">
+            <img src="./images/partenaires/abbot_logo.png" alt="Abbott">
+            <img src="./images/partenaires/adobe-black8153.jpg" alt="Adobe">
+            <img src="./images/partenaires/canon-large.webp" alt="Canon">
+            <img src="./images/partenaires/cisco-2-logo-black-and-white.png" alt="Cisco">
+            <img src="./images/partenaires/coca-cola-black-logo-vector.png" alt="Coca-Cola">
+            <img src="./images/partenaires/daktronics.jpg" alt="Daktronics">
+            <img src="./images/partenaires/EA_Sports_monochrome_logo.svg.png" alt="EA Sports">
+            <img src="./images/partenaires/emirates-airlines-logo-black-and-white.png" alt="Emirates">
+            <img src="./images/partenaires/hp.webp" alt="HP">
+            <img src="./images/partenaires/Logo_Adidas.webp" alt="Adidas">
+            <img src="./images/partenaires/mahou-logo-png_seeklogo-338814.png" alt="Mahou">
+            <img src="./images/partenaires/nivea-men.png" alt="Nivea Men">
+            <img src="./images/partenaires/PlayStation-Logo.png" alt="PlayStation">
+            <img src="./images/partenaires/zegna6621.logowik.com.webp" alt="Zegna">
         </div>
-         <div class="autres">
-          <p>Real Madrid  2025 © </p>
-         </div>
-      </footer>
+        <div class="autres">
+            <p>Real Madrid 2025 ©</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

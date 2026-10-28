@@ -1,279 +1,269 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Real Madrid — Accueil</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Alfa+Slab+One&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="./images/real-madrid-cf-logo-noir-et-blanc-club-de-football-professionnel-espagne-illustration-vectorielle-resume-noir-et-blanc-2t22c35.jpg">
 </head>
 <body>
     <header>
-        <nav> 
-            <div class="nav-text">
-                <img src="./images/Adobe Express - file.png" alt="" width="50" height="50">
-                <img src="./CABECERA_PARCHE_15_nuevo.webp" alt=""  width="50" height="50">
-            <!-- <h1> réal madrid </h1> -->
-            
-            </div>
-            <div class="nav-element">
+        <a href="index.html" class="nav-text">
+            <img src="./images/Adobe Express - file.png" alt="Logo du Real Madrid" width="44" height="44">
+            <img src="./CABECERA_PARCHE_15_nuevo.webp" alt="Écusson 15 Ligues des champions" width="44" height="44">
+            <span>Real Madrid</span>
+        </a>
+        <button class="burger" aria-label="Ouvrir le menu" aria-expanded="false">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <nav>
             <ul>
-               
-                <li><a href="">accueil</a></li>
-                <li><a href="#actu">actualité</a></li>
-                <li><a href="#boutique">boutique</a></li>
-                <li><a href="connexion.html" <i class="fa-solid fa-user"></i></a></li>
+                <li><a href="index.html" class="actif">Accueil</a></li>
+                <li><a href="#actu">Actualité</a></li>
+                <li><a href="#palmares">Palmarès</a></li>
+                <li><a href="#boutique">Boutique</a></li>
+                <li><a href="connexion.html" class="compte"><i class="fa-solid fa-user"></i> Compte</a></li>
             </ul>
-        </div>
         </nav>
     </header>
 
     <div class="global">
         <div class="texte">
-          <div class="texte1">
-            <span class="texte1-1" data-text="Bienvenue">Bienvenue </span>
-            <span class="texte1-2">sur la page officielle du Real Madrid.</span>
+            <span class="sur-titre">Hala Madrid</span>
+            <h1><span class="texte1-1">Bienvenue</span> sur la page officielle du Real Madrid.</h1>
+            <p>Actualités, calendrier, palmarès et boutique : toute la vie du club au même endroit.</p>
+            <div class="boutons">
+                <a href="#boutique" class="bouton bouton-plein">Voir la boutique</a>
+                <a href="#actu" class="bouton bouton-contour">Dernières actus</a>
+            </div>
+            <div class="logo">
+                <a href="" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+                <a href="" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                <a href="" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
         </div>
-          <div class="logo">
-              <a href=""><i class="fa-brands fa-telegram"></i></a>
-              <a href=""><i class="fa-brands fa-square-instagram"></i></i></a>
-              <a href=""><i class="fa-brands fa-facebook"></i></a>
-              <a href=""><i class="fa-brands fa-square-x-twitter"></i></a>
-          </div>
-         </div>
-        <div class="image"><img src="./images/image global/Adobe Express - file.png" alt=""></div>
-        
+        <div class="image"><img src="./images/image global/Adobe Express - file.png" alt="Joueurs du Real Madrid"></div>
     </div>
 
-    <section class="actu" id="actu">
-        <h1>actualité</h1>
-         <div class="card6">
-            <img src="./images/info/ND_COPA_REAL_SOCIEDAD_RM_ALEGRIA_ENDRICK_BELLINGHAM_GettyImages_2202154564.webp" alt="">
-            <p>Le Real prend l'avantage dans la qualification pour la finale de Coupe qui se décidera au Bernabéu</p>
-         </div>
+    <section class="actu bloc" id="actu">
+        <div class="titre-section">
+            <span>À la une</span>
+            <h2>Actualité</h2>
+        </div>
+        <article class="card6">
+            <img src="./images/info/ND_COPA_REAL_SOCIEDAD_RM_ALEGRIA_ENDRICK_BELLINGHAM_GettyImages_2202154564.webp" alt="Joueurs du Real Madrid célébrant un but">
+            <div class="card6-texte">
+                <span class="etiquette">Coupe du Roi</span>
+                <h3>Le Real prend l'avantage dans la qualification pour la finale de Coupe qui se décidera au Bernabéu</h3>
+            </div>
+        </article>
         <div class="card7">
-            <div class="card8">
-                <img src="./images/info/ND_SORTEO_COPA_DEL_REY_01.webp" alt="">
-                <p>Real Sociedad-Real Madrid <br> en demi-finales de la Coupe <br> du Roi</p>
-            </div>
-
-            <div class="card8">
-                <img src="./images/info/ND_CHAMPIONS_CITY_RM_ANCELOTTI_AV10683.webp" alt="">
-                <p>Ancelotti : "Ils se sont tous <br> sacrifiés et la qualité de <br> l'équipe est indéniable. C'est <br> la voie à suivre"</p>
-            </div>
-
-            <div class="card8">
-                <img src="./images/info/ND_CHAMPIONS_CITY_RM_VINICIUS_MVP_AV20531.webp" alt="">
-                <p>Vini Jr., MVP de la rencontre : <br> "Il faut continuer sur cette <br> lancée et défendre comme <br> ce soir pour vivre une <br> nouvelle nuit magique au <br> Bernabéu"</p>
-            </div>
-
-            <div class="card8">
-                <img src="./images/info/ND_CHAMPIONS_CITY_RM_ALEGRIA_MBAPPE_VINICIUS_AV12805.webp" alt="">
-                <p>Le Real Madrid atteint les <br> 300 victoires en Coupe <br> d'Europe</p>
-            </div>
+            <article class="card8">
+                <img src="./images/info/ND_SORTEO_COPA_DEL_REY_01.webp" alt="Tirage de la Coupe du Roi">
+                <p>Real Sociedad-Real Madrid en demi-finales de la Coupe du Roi</p>
+            </article>
+            <article class="card8">
+                <img src="./images/info/ND_CHAMPIONS_CITY_RM_ANCELOTTI_AV10683.webp" alt="Carlo Ancelotti">
+                <p>Ancelotti : « Ils se sont tous sacrifiés et la qualité de l'équipe est indéniable. C'est la voie à suivre »</p>
+            </article>
+            <article class="card8">
+                <img src="./images/info/ND_CHAMPIONS_CITY_RM_VINICIUS_MVP_AV20531.webp" alt="Vinicius Jr.">
+                <p>Vini Jr., MVP de la rencontre : « Il faut continuer sur cette lancée et défendre comme ce soir pour vivre une nouvelle nuit magique au Bernabéu »</p>
+            </article>
+            <article class="card8">
+                <img src="./images/info/ND_CHAMPIONS_CITY_RM_ALEGRIA_MBAPPE_VINICIUS_AV12805.webp" alt="Mbappé et Vinicius">
+                <p>Le Real Madrid atteint les 300 victoires en Coupe d'Europe</p>
+            </article>
         </div>
-
-
     </section>
 
-    <section class="even">
-        <h1> prochains évènements</h1>
-       <div class="card2">
-        <div class="card3">
- 
-            <div class="cardimg">
-                <img src="./images/évènement/Remove background project.png" alt="">
-                <img src="./images/évènement/1503420122real-madrid-logo-football-club.png" alt="">
+    <section class="even bloc bloc-sombre">
+        <div class="titre-section">
+            <span>Calendrier</span>
+            <h2>Prochains évènements</h2>
+        </div>
+        <div class="card2">
+            <div class="card3">
+                <div class="cardimg">
+                    <img src="./images/évènement/Remove background project.png" alt="Osasuna">
+                    <span class="vs">VS</span>
+                    <img src="./images/évènement/1503420122real-madrid-logo-football-club.png" alt="Real Madrid">
+                </div>
+                <p><span>La Liga</span>Journée 24<br>Samedi 15 février</p>
             </div>
-            <p>
-               <span>La liga</span>  
-               <br> journée 24 <br>
-               samedi 15 fevrier
-            </p>
-
-        </div>
-       
-       <div class="card3">
- 
-        <div class="cardimg">
-            <img src="./images/évènement/Adobe Express - file.png" alt="">
-            <img src="./images/évènement/1503420122real-madrid-logo-football-club.png" alt="">
-        </div>
-        <p>
-            <span>champions league</span> <br>
-            mercredi 19 fevrier
-        </p>
-            
-        </div>
-        
-    <div class="card3">
- 
-        <div class="cardimg">
-            <img src="./images/évènement/Girona_FC_Logo.svg.png" alt="">
-            <img src="./images/évènement/1503420122real-madrid-logo-football-club.png" alt="">
-        </div>
-        <p>
-            <span> La liga</span><br>
-            journée 25 <br>
-            dimanche 23 février
-        </p>
-
-    </div>
-    
-
-     <div class="card3">
- 
-            <div class="cardimg">
-                <img src="./images/évènement/Logo_Real_Betis_Balompié_-_2022.svg" alt="">
-                <img src="./images/évènement/1503420122real-madrid-logo-football-club.png" alt="">
+            <div class="card3">
+                <div class="cardimg">
+                    <img src="./images/évènement/Adobe Express - file.png" alt="Manchester City">
+                    <span class="vs">VS</span>
+                    <img src="./images/évènement/1503420122real-madrid-logo-football-club.png" alt="Real Madrid">
+                </div>
+                <p><span>Champions League</span>Mercredi 19 février</p>
             </div>
-            <p>
-                <span> La liga</span><br>
-            journée 26 <br>
-            2 mars
-
-            </p>
-
+            <div class="card3">
+                <div class="cardimg">
+                    <img src="./images/évènement/Girona_FC_Logo.svg.png" alt="Girona">
+                    <span class="vs">VS</span>
+                    <img src="./images/évènement/1503420122real-madrid-logo-football-club.png" alt="Real Madrid">
+                </div>
+                <p><span>La Liga</span>Journée 25<br>Dimanche 23 février</p>
+            </div>
+            <div class="card3">
+                <div class="cardimg">
+                    <img src="./images/évènement/Logo_Real_Betis_Balompié_-_2022.svg" alt="Real Betis">
+                    <span class="vs">VS</span>
+                    <img src="./images/évènement/1503420122real-madrid-logo-football-club.png" alt="Real Madrid">
+                </div>
+                <p><span>La Liga</span>Journée 26<br>Dimanche 2 mars</p>
+            </div>
         </div>
-       </div>
-       
-    </div>
-   </div>
-    
-   </div>
-    
-
     </section>
-    <section class="palmares">
-           <h1 class="titre">palmarès</h1>
+
+    <section class="palmares bloc" id="palmares">
+        <div class="titre-section">
+            <span>Le plus grand club du monde</span>
+            <h2>Palmarès</h2>
+        </div>
         <div class="card1">
             <div class="card">
-                <img src="./images/trophé/Coupe-du-Roi.jpg" alt="">
-                <p>20</p>
-                <h3>coupe du roi</h3>
-                
-            </div>
-            <div class="card">
-                <img src="./images/trophé/01hkpwwenj81pe0a3z6v.webp" alt="">
-                <p>13</p>
-                <h3>super <br> coupe <br> d'espagne</h3>
-                
-            </div>
-            <div class="card">
-                <img src="./images/trophé/coupe-uefa.jpg" alt="">
-                <p>2</p>
-                <h3>lige europa</h3>
-               
-            </div>
-            <div class="card">
-                <img src="./images/trophé/FIFA_Club_of_the_Century002.JPG" alt="">
-                <p>1</p>
-                <h3>trophée fifa <br>du meilleur club <br>du xxe siècle</h3>
-               
+                <img src="./images/trophé/Trofeo_UEFA_Champions_League.jpg.webp" alt="">
+                <p>15</p>
+                <h3>UEFA Champions League</h3>
             </div>
             <div class="card">
                 <img src="./images/trophé/png-clipart-award-trophy-la-liga-award-education-science.png" alt="">
                 <p>36</p>
-                <h3>liga</h3>
-                
+                <h3>Liga</h3>
             </div>
             <div class="card">
-                <img src="./images/trophé/supercoupe-trophee.webp" alt="">
-                <p>6</p>
-                <h3>super coupe <br> d'europe</h3>
-                
-
+                <img src="./images/trophé/Coupe-du-Roi.jpg" alt="">
+                <p>20</p>
+                <h3>Coupe du Roi</h3>
             </div>
             <div class="card">
-                <img src="./images/trophé/Trofeo_UEFA_Champions_League.jpg.webp" alt="">
-                <p>15</p>   
-                <h3> uefa champions league </h3>
-                
+                <img src="./images/trophé/01hkpwwenj81pe0a3z6v.webp" alt="">
+                <p>13</p>
+                <h3>Supercoupe d'Espagne</h3>
             </div>
             <div class="card">
                 <img src="./images/trophé/world-cup-trophee-2021.webp" alt="">
                 <p>9</p>
-                <h3>coupe du monde <br> des  clubs</h3>
-                
+                <h3>Coupe du monde des clubs</h3>
             </div>
-            
+            <div class="card">
+                <img src="./images/trophé/supercoupe-trophee.webp" alt="">
+                <p>6</p>
+                <h3>Supercoupe d'Europe</h3>
+            </div>
+            <div class="card">
+                <img src="./images/trophé/coupe-uefa.jpg" alt="">
+                <p>2</p>
+                <h3>Ligue Europa</h3>
+            </div>
+            <div class="card">
+                <img src="./images/trophé/FIFA_Club_of_the_Century002.JPG" alt="">
+                <p>1</p>
+                <h3>Trophée FIFA du meilleur club du XXe siècle</h3>
+            </div>
         </div>
-        
     </section>
-        
+
     <section id="boutique">
         <div class="vid">
-            <video src="./images/0211.mp4" muted autoplay loop></video>
-            <h1>  BOUTIQUE</h1>
-            <p> profitez de nos nos articles othentiques à bas prix</p>
+            <video src="./images/0211.mp4" poster="./imgboutique/global/over2.webp" muted autoplay loop playsinline></video>
+            <div class="vid-texte">
+                <h2>Boutique</h2>
+                <p>Profitez de nos articles authentiques à bas prix</p>
+            </div>
         </div>
 
-        <div class="card4">
-            <div class="card5">
-                <img src="./images/boutique/maillots/a_tercera_equipacion.webp" alt="">
-                <p>découvrez la nouvelle tenue third <br>
-                du Real Madrid 24/25</p>
-               <a href="formulaire.html"> <button>acheter la tenue third</button></a>
-            </div>
-            <div class="card5">
-                <img src="./images/boutique/maillots/e_coleccion_viaje.webp" alt="">
-                <p>collection voyage</p>
-                <a href="formulaire.html"><button>acheter la collection voyage</button></a>
-            </div>
-            <div class="card5">
-                <img src="./images/boutique/maillots/b_primera_equipacion.webp" alt="">
-                <p>tenue à domicile</p>
-                <a href="formulaire.html"> <button>acheter la tenue à domicile</button></a>
-            </div>
-            <div class="card5">
-                <img src="./images/boutique/maillots/d_coleccion_entrenamiento.webp" alt="">
-                <p>collection officielle entrainement</p>
-                <a href="formulaire.html"><button>acheter la collection officielle entrainement</button></a>
-            </div>
-            <div class="card5">
-                <img src="./images/boutique/maillots/test_courtois.webp" alt="">
-                <p>tenue gardien</p>
-                <a href="formulaire.html"> <button>acheter la tenue gardien</button></a>
-            </div>
-            <div class="card5">
-                <img src="./images/boutique/maillots/over2.webp" alt="">
-                <p>survêtement Real Madrid</p>
-                <a href="formulaire.html"> <button>acheter les survêtements Real Madrid </button></a>
+        <div class="bloc">
+            <div class="card4">
+                <article class="card5">
+                    <img src="./images/boutique/maillots/a_tercera_equipacion.webp" alt="Tenue third 24/25">
+                    <div class="card5-corps">
+                        <h3>Tenue third 24/25</h3>
+                        <p>Découvrez la nouvelle tenue third du Real Madrid.</p>
+                        <a href="formulaire.html" class="bouton bouton-plein">Acheter</a>
+                    </div>
+                </article>
+                <article class="card5">
+                    <img src="./images/boutique/maillots/e_coleccion_viaje.webp" alt="Collection voyage">
+                    <div class="card5-corps">
+                        <h3>Collection voyage</h3>
+                        <p>Les tenues portées par l'équipe lors de ses déplacements.</p>
+                        <a href="formulaire.html" class="bouton bouton-plein">Acheter</a>
+                    </div>
+                </article>
+                <article class="card5">
+                    <img src="./images/boutique/maillots/b_primera_equipacion.webp" alt="Tenue à domicile">
+                    <div class="card5-corps">
+                        <h3>Tenue à domicile</h3>
+                        <p>Le maillot blanc mythique du Santiago Bernabéu.</p>
+                        <a href="formulaire.html" class="bouton bouton-plein">Acheter</a>
+                    </div>
+                </article>
+                <article class="card5">
+                    <img src="./images/boutique/maillots/d_coleccion_entrenamiento.webp" alt="Collection entraînement">
+                    <div class="card5-corps">
+                        <h3>Collection entraînement</h3>
+                        <p>La collection officielle d'entraînement des joueurs.</p>
+                        <a href="formulaire.html" class="bouton bouton-plein">Acheter</a>
+                    </div>
+                </article>
+                <article class="card5">
+                    <img src="./images/boutique/maillots/test_courtois.webp" alt="Tenue gardien">
+                    <div class="card5-corps">
+                        <h3>Tenue gardien</h3>
+                        <p>La tenue des gardiens du Real Madrid.</p>
+                        <a href="formulaire.html" class="bouton bouton-plein">Acheter</a>
+                    </div>
+                </article>
+                <article class="card5">
+                    <img src="./images/boutique/maillots/over2.webp" alt="Survêtement Real Madrid">
+                    <div class="card5-corps">
+                        <h3>Survêtement</h3>
+                        <p>Le survêtement Real Madrid pour le sport comme pour la ville.</p>
+                        <a href="formulaire.html" class="bouton bouton-plein">Acheter</a>
+                    </div>
+                </article>
             </div>
 
-            
+            <div class="btn">
+                <a href="boutique.html" class="bouton bouton-contour-sombre">Plus d'articles <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
         </div>
-
-        <div class="btn">
-            <a href="boutique.html"><button>plus d'articles</button></a>
-          </div>
-                      
     </section>
 
-       <footer>
+    <footer>
+        <p class="footer-titre">Nos partenaires</p>
+        <div class="logo-partenaires">
+            <img src="./images/partenaires/1683000993orange-logo-black.webp" alt="Orange">
+            <img src="./images/partenaires/abbot_logo.png" alt="Abbott">
+            <img src="./images/partenaires/adobe-black8153.jpg" alt="Adobe">
+            <img src="./images/partenaires/canon-large.webp" alt="Canon">
+            <img src="./images/partenaires/cisco-2-logo-black-and-white.png" alt="Cisco">
+            <img src="./images/partenaires/coca-cola-black-logo-vector.png" alt="Coca-Cola">
+            <img src="./images/partenaires/daktronics.jpg" alt="Daktronics">
+            <img src="./images/partenaires/EA_Sports_monochrome_logo.svg.png" alt="EA Sports">
+            <img src="./images/partenaires/emirates-airlines-logo-black-and-white.png" alt="Emirates">
+            <img src="./images/partenaires/hp.webp" alt="HP">
+            <img src="./images/partenaires/Logo_Adidas.webp" alt="Adidas">
+            <img src="./images/partenaires/mahou-logo-png_seeklogo-338814.png" alt="Mahou">
+            <img src="./images/partenaires/nivea-men.png" alt="Nivea Men">
+            <img src="./images/partenaires/PlayStation-Logo.png" alt="PlayStation">
+            <img src="./images/partenaires/zegna6621.logowik.com.webp" alt="Zegna">
+        </div>
+        <div class="autres">
+            <p>Real Madrid 2025 ©</p>
+        </div>
+    </footer>
 
-         <div class="logo">
-            <img src="./images/partenaires/1683000993orange-logo-black.webp" alt="">
-            <img src="./images/partenaires/abbot_logo.png" alt="">
-            <img src="./images/partenaires/adobe-black8153.jpg" alt="">
-            <img src="./images/partenaires/canon-large.webp" alt="">
-            <img src="./images/partenaires/cisco-2-logo-black-and-white.png" alt="">
-            <img src="./images/partenaires/coca-cola-black-logo-vector.png" alt="">
-            <img src="./images/partenaires/daktronics.jpg" alt="">
-            <img src="./images/partenaires/EA_Sports_monochrome_logo.svg.png" alt=""> <br>
-            <img src="./images/partenaires/emirates-airlines-logo-black-and-white.png" alt="">
-            <img src="./images/partenaires/hp.webp" alt="">
-            <img src="./images/partenaires/Logo_Adidas.webp" alt="">
-            <img src="./images/partenaires/mahou-logo-png_seeklogo-338814.png" alt="">
-            <img src="./images/partenaires/nivea-men.png" alt="">
-            <img src="./images/partenaires/PlayStation-Logo.png" alt="">
-            <img src="./images/partenaires/zegna6621.logowik.com.webp" alt="">
-         </div>
-          <div class="autres">
-           <p>Real Madrid  2025 © </p>
-          </div>
-       </footer>
+    <script src="script.js"></script>
 </body>
- <script src="script.js"></script>
 </html>

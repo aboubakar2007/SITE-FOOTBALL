@@ -1,269 +1,201 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* boutique — complète style.css */
+.global-boutique{
+    min-height: 80vh;
+    align-items: center;
+}
+.global-boutique .image img{
+    max-height: 70vh;
+    border-radius: 24px;
+    object-fit: cover;
+    object-position: top;
+    margin-bottom: 40px;
 }
 
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgb(134, 135, 147);
-    padding: 20px;
-    z-index: 1000; 
+/* joueurs */
+.joueurs{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 18px;
 }
-
-.nav-text{
-    flex: 1;
-}
-nav{
+.joueur{
     position: relative;
-    color: white;
-    display: flex;
+    overflow: hidden;
+    border-radius: 18px;
+    background: var(--nuit);
+    color: var(--blanc);
+    text-decoration: none;
+    aspect-ratio: 3 / 4;
 }
-nav h1{
-    left: 4%;
-    top: 15%;
+.joueur img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    transition: transform 0.4s;
+}
+.joueur:hover img{
+    transform: scale(1.06);
+}
+.joueur::after{
+    content: "";
     position: absolute;
-    align-items: center;
-    text-align: start;
+    inset: 0;
+    background: linear-gradient(180deg, transparent 50%, rgba(31, 34, 51, 0.9));
+}
+.numero{
+    position: absolute;
+    z-index: 1;
+    top: 12px;
+    left: 14px;
     font-family: "Alfa Slab One", serif;
-    color: blue;
+    font-size: 1.6rem;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
-ul{
-    align-items: center;
+.nom{
+    position: absolute;
+    z-index: 1;
+    left: 14px;
+    right: 14px;
+    bottom: 14px;
+    font-family: "Anton", sans-serif;
+    font-size: 1.25rem;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+/* meilleures ventes */
+.ventes{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.vente{
     display: flex;
-    
+    flex-direction: column;
+    padding: 16px;
+    border-radius: 18px;
+    background: var(--blanc);
+    color: var(--texte);
 }
-ul a{
-    text-align: center;
-    margin-right: 90px;
+.vente img{
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: contain;
+    margin-bottom: 14px;
 }
-li{
-    list-style: none;
+.vente p{
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin-bottom: 14px;
 }
-header a{
-    /* color: black; */
-     font-size: 25px;
-    color: white;
+.vente-pied{
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+.vente-pied span{
+    font-family: "Alfa Slab One", serif;
+    color: var(--indigo);
+}
+.vente-pied a{
+    padding: 8px 18px;
+    border-radius: 99px;
+    background: var(--nuit);
+    color: var(--blanc);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: background 0.3s;
+}
+.vente-pied a:hover{
+    background: var(--indigo);
+}
+
+/* collections */
+.collections{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.collection{
+    position: relative;
+    overflow: hidden;
+    border-radius: 18px;
+    aspect-ratio: 3 / 4;
+    color: var(--blanc);
     text-decoration: none;
 }
-header a:hover{
-    text-decoration: underline;
-    color: blue;
-
-}
-.global{
-    display: flex;
- 
-}
-.global-img img{
-    width: 70%;
-    object-fit: cover;
-    height: 90vh;
-    margin-top: 80px;
-    margin-left: 80px;
-
-}
-.global-txt p{
- margin-left: 40px;
- font-size: 20px;
- font-weight: bold;
- font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-.global-txt h1{
-    font-size: 70px;
-    margin-left: 40px;
-    color: black;
-    flex: 1;
-    margin-top: 200px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    
-}
-#joueur{
+.collection:nth-child(even){
     margin-top: 40px;
 }
-section h1{
-   font-weight: bold;
-    font-size: 60px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin-bottom: -20px;
-    text-align: center;
-    margin-top: 90px;
-}
-.card1{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-.card2{
-    margin-top: 90px;
-    height: 500px;
-    width: 30%;
-    border-radius: 40px;
-    position: relative;
-
-}
-.card2 img{
-    height: 500px;
-    border-radius: 40px;
+.collection img{
     width: 100%;
-}
-.card2 p{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    font-weight: bold;
-    position: absolute;
-    top: 70%;
-    left: 5%;
-    background-color: white;
-    width: 90%;
-    padding: 20px;
-    border-radius: 20px;
-}
-.card2 p button{
-    color: white;
-    position: relative;
-    left: 30%;
-    padding: 20px;
-    border-radius: 10px;
-    border: none;
-    background: linear-gradient(to bottom, rgb(82, 7, 174), blue);
-    cursor: pointer;
-
-}
-.card2  button:hover{
-  transform: scale(1.1);
-}
-.card2 button:active{
-    transform: scale(0.8);
-}
-.card3{
-    margin-top: 80px;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-#stellers{
-    margin-top: 60px;
-    padding: 60px;
-    margin-bottom: 60px;
-    background-color: rgb(188,196,205);
-}
-.card4{
-    cursor: pointer;
-    border-radius: 20px;
-    height: 330px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    width: 20%;
-    background-color: white;
-    
-}
-.card4 img{
-    border-radius: 20px;
-    width: 100%;
-
-}
-.card4 img:hover{
-    transition: 0.3s;
-    transform: scale(0.9);
-}
-.card4 span{
-    font-weight: bold;
-    position: relative;
-    width: 100%;
-    top: 4%;
-    font-size: 22px;
-    left: 5%;
-
-}
-.card4 p{
-    border-bottom: 1px solid black;
-    text-align: center;
-}
-.card5{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-.card6{
-    margin-bottom: -150px;
-    width: 40%;
-}
-.card6 img{
+    height: 100%;
     object-fit: cover;
-    width: 540px;
-    height: 642px;
-    border-radius: 20px;
- 
+    transition: transform 0.4s;
 }
-.bas{
-    position: relative;
-    top: 10%;
+.collection:hover img{
+    transform: scale(1.06);
 }
-.bs p{
-  position: relative;
-  bottom: 20%;
-  left: 5%;
-  backdrop-filter: blur(20px);
-  background-color: rgba(58, 58, 176, 0.42);
-  padding: 40px;
-  border-radius: 20px;
-  width: 70%;
-  font-size: 40px;
-  color: white;
-}
-.bs button{
-    padding: 20px;
-    border-radius: 15px;
-    border: 3px solid rgb(246, 240, 240);
-    background-color: transparent;
-    color: white;
-    width: 40%;
-    cursor: pointer;
-    font-size: 20px;
-}
-.card6 button:hover{
-    background-color: rgba(232, 227, 227, 0.331);
-    transition: 0.2s ease;
+.collection span{
+    position: absolute;
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+    border-radius: 12px;
+    background: rgba(31, 34, 51, 0.85);
+    font-weight: 600;
 }
 
-.ht p{
-    position: relative;
-    bottom: 26%;
-    left: 5%;
-    backdrop-filter: blur(20px);
-    background-color: rgba(58, 58, 176, 0.42);
-    padding: 40px;
-    border-radius: 20px;
-    width: 70%;
-    font-size: 40px;
-    color: white;
-  }
-.ht button{
-    padding: 20px;
-    border-radius: 15px;
-    border: 3px solid rgb(246, 240, 240);
-    background-color: transparent;
-    color: white;
-    width: 40%;
-    cursor: pointer;
-    font-size: 20px;
+@media (max-width: 1024px){
+    .joueurs{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .ventes,
+    .collections{
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
-footer .logo img{
-    width: 70px;
-    height: 70px;
-    border-radius: 100%;
-    margin-right: 20px;
-   
+@media (max-width: 860px){
+    .global-boutique .image img{
+        max-height: 50vh;
+        width: 100%;
+    }
 }
-footer{
-    border-top: 2px ridge black;
-    background-color: white;
-    margin-top: 60px;
-    padding-top: 40px;
-}
-footer .logo{
-    text-align: center;
+@media (max-width: 600px){
+    .joueurs{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+    .nom{
+        font-size: 1.05rem;
+    }
+    .ventes,
+    .collections{
+        gap: 12px;
+    }
+    .vente{
+        padding: 12px;
+    }
+    .vente p{
+        font-size: 0.85rem;
+    }
+    .vente-pied{
+        flex-direction: column;
+        align-items: stretch;
+        text-align: center;
+    }
+    .collection:nth-child(even){
+        margin-top: 0;
+    }
+    .collection span{
+        font-size: 0.85rem;
+        padding: 10px 12px;
+    }
 }
